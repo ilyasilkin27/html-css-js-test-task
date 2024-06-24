@@ -302,6 +302,7 @@ body {
 }
 
 .pricing_customer__main-button {
+    text-decoration: none;
     background-color: #ff9800;
     color: #fff;
     padding: 15px 30px;
@@ -527,6 +528,27 @@ body {
 .clients_customer__logo {
     max-width: 150px;
     height: auto;
+}
+
+.clients_customer__logo-container::after {
+    content: attr(data-company);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-size: 14px;
+}
+
+.clients_customer__logo-container:hover::after {
+    opacity: 1;
 }
 
 .clients_customer__arrow {
