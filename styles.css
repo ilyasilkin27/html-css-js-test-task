@@ -185,6 +185,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .cta_customer__button--primary {
@@ -331,6 +332,7 @@ body {
 }
 
 .pricing_customer__main-button {
+    text-align: center;
     display: inline-block;
     background-color: #ff9800;
     color: #fff;
