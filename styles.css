@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -94,6 +95,34 @@ body {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.service_customer__subtitle a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.service_customer__subtitle a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.service_customer__subtitle a:hover {
+    color: #007bff;
+}
+
+.service_customer__subtitle a:hover::before {
+    visibility: visible;
+    width: 100%;
 }
 
 .service_customer__description {
@@ -302,13 +331,14 @@ body {
 }
 
 .pricing_customer__main-button {
-    text-decoration: none;
+    display: inline-block;
     background-color: #ff9800;
     color: #fff;
     padding: 15px 30px;
     font-size: 16px;
     border: none;
-    border-radius: 30px;
+    border-radius: 50px;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
