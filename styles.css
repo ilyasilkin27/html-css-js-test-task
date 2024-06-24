@@ -360,4 +360,7 @@ body {
     .pricing_customer__item {
         flex: 1 1 100%;
     }
+    .pricing_customer__price {
+        font-size: 8px;
+    }
 }
