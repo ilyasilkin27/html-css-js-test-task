@@ -74,6 +74,23 @@
                     <button class="cta_customer__button cta_customer__button--primary">Отправить заявку</button>
                     <a href="tel:8-999-999-99-99" class="cta_customer__button cta_customer__button--secondary" id="call-button">Заказать звонок</a>
                 </div>
+                <div id="overlay" class="overlay">
+                    <div class="popup">
+                        <span class="close">&times;</span>
+                        <h2>Отправить заявку</h2>
+                        <form id="popupForm">
+                            <label for="name">Имя:</label>
+                            <input type="text" id="name" name="name" required>
+                            <label for="phone">Телефон:</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="email">Почта:</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="comment">Комментарий:</label>
+                            <textarea id="comment" name="comment"></textarea>
+                            <button type="submit">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="cta_customer__image">
                 <img src="fixtures/worker.png" alt="Рабочий" class="cta_customer__worker-image">
