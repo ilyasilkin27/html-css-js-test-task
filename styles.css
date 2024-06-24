@@ -464,16 +464,16 @@ body {
 .testimonials_customer__arrow {
     background: none;
     font-size: 100px;
-    color: #888;
+    color: #ccc;
     border: none;
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .testimonials_customer__arrow:hover {
-    color: #0056b3;
+    color: #666;
 }
 
 .testimonials_customer__arrow--left {
@@ -482,6 +482,78 @@ body {
 
 .testimonials_customer__arrow--right {
     margin-left: auto;
+}
+
+.clients_customer {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.clients_customer__header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.clients_customer__elips {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.clients_customer__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clients_customer__content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.clients_customer__content {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.clients_customer__logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.clients_customer__arrow {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 100px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.clients_customer__arrow:hover {
+    color: #666;
+}
+
+.clients_customer__arrow--left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.clients_customer__arrow--right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 @media (max-width: 768px) {
@@ -543,19 +615,19 @@ body {
         width: 100%;
         max-width: 300px;
     }
-    .testimonials_customer__content {
+    .testimonials_customer {
+        display: none;
+    }
+    .clients_customer__content {
         flex-direction: column;
         align-items: center;
     }
-    .testimonials_customer__card {
-        width: 100%;
-        max-width: 400px;
+    .clients_customer__logo {
+        max-width: 100%;
+        margin: 10px 0;
     }
-    .testimonials_customer__arrows {
-        justify-content: center;
-    }
-    .testimonials_customer__arrow--left,
-    .testimonials_customer__arrow--right {
-        margin: 0 10px;
+    .clients_customer__arrow--left,
+    .clients_customer__arrow--right {
+        font-size: 18px;
     }
 }
