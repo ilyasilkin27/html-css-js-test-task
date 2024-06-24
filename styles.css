@@ -670,6 +670,27 @@ body {
     transform: translateY(-50%);
 }
 
+.testimonials_customer__card,
+.clients_customer__logo-container {
+    display: none;
+}
+
+.testimonials_customer__card.active,
+.clients_customer__logo-container.active {
+    display: block;
+}
+
+.testimonials_customer__content,
+.clients_customer__content {
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonials_customer__arrow,
+.clients_customer__arrow {
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .header_customer__container {
         flex-direction: column;
