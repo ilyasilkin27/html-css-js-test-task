@@ -396,6 +396,94 @@ body {
     text-align: left;
 }
 
+.testimonials_customer {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+.testimonials_customer__header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.testimonials_customer__elips {
+    max-width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.testimonials_customer__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.testimonials_customer__content {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.testimonials_customer__card {
+    background: url('fixtures/bgForPerson.png') center no-repeat;
+    background-size: 300%;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonials_customer__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonials_customer__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.testimonials_customer__text {
+    font-size: 14px;
+    color: #666;
+}
+
+.testimonials_customer__arrow {
+    background: none;
+    font-size: 100px;
+    color: #888;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.testimonials_customer__arrow:hover {
+    color: #0056b3;
+}
+
+.testimonials_customer__arrow--left {
+    margin-right: auto;
+}
+
+.testimonials_customer__arrow--right {
+    margin-left: auto;
+}
+
 @media (max-width: 768px) {
     .header_customer__container {
         flex-direction: column;
@@ -454,5 +542,20 @@ body {
     .why-choose-us_customer__feature {
         width: 100%;
         max-width: 300px;
+    }
+    .testimonials_customer__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .testimonials_customer__card {
+        width: 100%;
+        max-width: 400px;
+    }
+    .testimonials_customer__arrows {
+        justify-content: center;
+    }
+    .testimonials_customer__arrow--left,
+    .testimonials_customer__arrow--right {
+        margin: 0 10px;
     }
 }
